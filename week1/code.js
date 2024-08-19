@@ -1,31 +1,10 @@
-// https://projects.100xdevs.com/tracks/public-private-keys/Public-Key-Cryptography-1
+// Node js code for generating SHA-256
 
-// Encodings
-// Bytes are cool but highly unreadable. Imagine telling someone
-// Hey, my name is 00101011101010101020
-// It’s easier to encode data so it is more human readable . Some common encodings include - 
-// Ascii
-// Hex
-// Base64
-// Base58
+//NOTES: https://app.100xdevs.com/pdf/425
 
-// 1) Ascii 
-function assciitoString(string){
-    const arr = [];
-    for(let i=0; i<string.length; i++){
-        arr.push(string.charCodeAt(i));
-    }
-    return arr;
-}
+const crypto = require ('crypto');
 
-function assciitoString2(s){
-    return ([...s].map(char=>{
-        char.charCodeAt(0);
-    }))
-}
+const input = 'Ashish';
+const hash = crypto.createHash('sha256').update(input).digest('hex');
 
-const asccii = "hey";
-const result = assciitoString(asccii);
-console.log(result);
-
-// Hex
+console.log(hash);
