@@ -1,4 +1,5 @@
-// https://projects.100xdevs.com/tracks/public-private-keys/Public-Key-Cryptography-1
+//SLIDES:  https://projects.100xdevs.com/tracks/public-private-keys/Public-Key-Cryptography-1
+//NOTES: https://app.100xdevs.com/courses/13/426/459
 
 // Hashing : sha-256 md5
 // symmetric encryption : AES
